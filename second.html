@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Example</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body class="bg-gray-100 flex">
+
+    <!-- Sidebar -->
+    <div class="bg-blue-600 text-white shadow-md w-64 h-screen">
+        <div class="p-4 border-b border-blue-500">
+            <h2 class="text-lg font-bold">My Dashboard</h2>
+        </div>
+        <ul class="mt-4">
+            <li class="flex items-center py-2 px-4 hover:bg-blue-500 cursor-pointer transition duration-200">
+                <i class="fas fa-tachometer-alt mr-2"></i> Dashboard
+            </li>
+            <li class="flex items-center py-2 px-4 hover:bg-blue-500 cursor-pointer transition duration-200">
+                <i class="fas fa-hand-holding-usd mr-2"></i> Collection
+            </li>
+            <li class="flex items-center py-2 px-4 hover:bg-blue-500 cursor-pointer transition duration-200">
+                <i class="fas fa-dollar-sign mr-2"></i> Payout
+            </li>
+            <li class="flex items-center py-2 px-4 hover:bg-blue-500 cursor-pointer transition duration-200">
+                <i class="fas fa-exclamation-triangle mr-2"></i> Dispute Report
+            </li>
+            <li class="flex items-center py-2 px-4 hover:bg-blue-500 cursor-pointer transition duration-200">
+                <i class="fas fa-file-invoice mr-2"></i> Invoice
+            </li>
+            <li class="flex items-center py-2 px-4 hover:bg-blue-500 cursor-pointer transition duration-200">
+                <i class="fas fa-university mr-2"></i> Virtual Account
+            </li>
+            <li class="flex items-center py-2 px-4 hover:bg-blue-500 cursor-pointer transition duration-200">
+                <i class="fas fa-chart-line mr-2"></i> Reports
+            </li>
+            <li class="flex items-center py-2 px-4 hover:bg-blue-500 cursor-pointer transition duration-200">
+                <i class="fas fa-cogs mr-2"></i> Developer Tools
+            </li>
+            <li class="flex items-center py-2 px-4 hover:bg-blue-500 cursor-pointer transition duration-200">
+                <i class="fas fa-user mr-2"></i> My Account
+            </li>
+            <li class="flex items-center py-2 px-4 hover:bg-blue-500 cursor-pointer transition duration-200">
+                <i class="fas fa-user-check mr-2"></i> Account Activation
+            </li>
+            <li class="flex items-center py-2 px-4 hover:bg-blue-500 cursor-pointer transition duration-200">
+                <i class="fas fa-sign-out-alt mr-2"></i> Logout
+            </li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+        <div class="flex flex-col p-4 bg-blue-700">
+        <!-- Navbar -->
+        <nav class="flex justify-between items-center pl-20 mb-4">
+            <div class="flex items-center">
+                <h1 class="text-white mr-4">Collection</h1>         
+                   <button type="button" class="w-64 bg-white text-white p-2 pr-7.5 rounded-md flex items-center">
+                    <i class="fa-solid fa-magnifying-glass mr-2" style="color: black;"></i>
+                    Search
+                </button>
+            </div>
+            
+            <div class="flex items-center">
+                <i class="fas fa-sun" style="font-size: 32px;"></i>            
+                 <span class="fa-solid fa-brightness mr-2"></span>
+                 <span class="material-icons" style="font-size: 32px; margin-right: 8px;">notifications</span>
+                 <span class="material-icons" style="font-size: 32px; margin-right: 8px;">&#xe5c3;</span>
+                 <i style='font-size:32px' class='fas'>&#xf406;</i>
+                </div>
+        </nav>
+        
+        <!-- Second Navbar -->
+        <nav class="bg-blue-700 shadow-md">
+            <div class="max-w-7xl mx-auto px-4 py-4 flex">
+                <div class="relative flex-grow">
+                    <input type="text" placeholder="Search..." class="border border-gray-300 rounded-md pl-10 pr-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-300 w-full">
+                    <svg class="absolute left-3 top-2.5 w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a7 7 0 100 14 7 7 0 000-14zm0 0l7 7m-7-7l-7 7"></path>
+                    </svg>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Content Below Navbar -->
+        <div class="flex flex-wrap bg-blue-650">
+            <div class="w-full sm:w-1/2 lg:w-1/4 bg-blue-400 p-4">
+                <div class="relative bg-white text-white p-4 rounded-lg mb-4">
+                    <p class="text-black">Settlements</p>
+                    <h2 class="text-2xl font-bold text-black">&#8377;432324564</h2>
+                    <p class="text-sm text-black">last updated 1 hour ago</p>
+                </div>
+            </div>
+            <div class="w-full sm:w-1/2 lg:w-1/4 bg-blue-400 p-4">
+                <div class="relative bg-white text-white p-4 rounded-lg mb-4">
+                    <p class="text-black">Pending Settlements</p>
+                    <h2 class="text-2xl font-bold text-black">&#8377;0</h2>
+                    <p class="text-sm text-black">available to payout</p>
+                </div>
+            </div>
+            <div class="w-full sm:w-1/2 lg:w-1/4 bg-blue-400 p-4">
+                <div class="relative bg-white text-white p-4 rounded-lg mb-4">
+                    <p class="text-black">Payment Received</p>
+                    <h2 class="text-2xl font-bold text-black">&#8377;0</h2>
+                    <p class="text-sm text-black">Transactions this month</p>
+                </div>
+            </div>
+            <div class="w-full sm:w-1/2 lg:w-1/4 bg-blue-400 p-4">
+                <div class="relative bg-white text-white p-4 rounded-lg mb-4">
+                    <p class="text-black">Disputes</p>
+                    <h2 class="text-2xl font-bold text-black">&#8377;0</h2>
+                    <p class="text-sm text-black">Last update 1 hour ago</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Main Section Content -->
+        <div class="pl-44  rounded-lg shadow-lg p-10 flex items-center space-x-4" style="width: calc(100% + 14px); margin-left: 0px; margin-right: -25px; background-color: #ECDFCC;">
+            <!-- Image Section -->
+            <div class="flex-shrink-0 text-center">
+                <img id="s1" src="g10.png" alt="Placeholder Image" class="w-28 h-28 rounded-md"> 
+            </div>
+            <!-- Text Section -->
+            <div class="flex-grow text-center">
+                <p class="text-gray-700 text-base font-bold">Finish providing your KYC details. Submit them to activate your account and begin receiving payments.</p>
+            </div>
+            <!-- Button Section -->
+            <div class="flex-shrink-0">
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Submit</button>
+            </div>
+        </div>
+        
+        <div class="pl-20  rounded-lg shadow-lg p-10 flex justify-center space-x-4" style="width: calc(100% + 30px); margin-left: 0px; margin-right: -25px; height: 400px; background-color: #FCFAEE;">
+            <div class="relative text-white p-8 rounded-lg mb-4 w-full max-w-lg"> <!-- Adjust max-w-lg to your desired width -->
+                <h2 class="text-2xl font-bold text-black">Live Payment and Settlements</h2>
+                <p class="text-sm text-black">Submit a few KYC details to start accepting <br> payments and receive settlements in your <br> account.</p>
+                <div class="flex justify-center mt-4">
+                    <button class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-700">
+                        Complete KYC
+                    </button>
+                </div>
+            </div>
+        
+            <div id="t1" class="relative text-black p-8 rounded-lg mb-4 w-full max-w-md"> <!-- Adjust max-w-md to your desired width -->
+                <h2 class="text-2xl font-bold">Account Activation</h2>
+                <p class="text-sm">Complete all KYC details to activate your account.</p>
+                <div class="flex justify-center mt-4">
+                    <button class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-700">
+                        Complete KYC
+                    </button>
+                </div>
+            </div>
+        
+            <div class="flex items-center justify-end w-full"> <!-- Added flex properties here -->
+                <div class="relative p-8 rounded-lg mb-4 w-full max-w-sm"> <!-- Adjust max-w-sm to your desired width -->
+                    <div class="flex justify-center mt-4">
+                        <img id="s1" src="g8.png" alt="Placeholder Image" class="w-35 h-35 rounded-md">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    
+          
+           
+          
+        </div>
+        
+
+
+        
+        
+    </div>
+
+</body>
+</html>
